@@ -1,0 +1,6 @@
+kaggle_project: "adaoduque/campeonato-brasileiro-de-futebol"
+file_path:
+  - "campeonato-brasileiro-full.csv"
+  - "campeonato-brasileiro-estatisticas-full.csv"
+  - "campeonato-brasileiro-gols.csv"
+  - "campeonato-brasileiro-cartoes.csv"
