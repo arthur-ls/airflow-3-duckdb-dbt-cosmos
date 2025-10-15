@@ -1,0 +1,2 @@
+KAGGLE_PROJECT="adaoduque/campeonato-brasileiro-de-futebol"
+FILE_PATH=["campeonato-brasileiro-full.csv", "campeonato-brasileiro-estatisticas-full.csv", "campeonato-brasileiro-gols.csv", "campeonato-brasileiro-cartoes.csv"]
