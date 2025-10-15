@@ -26,8 +26,7 @@ class DuckDBSaveDatabase:
 
     @try_except
     def validate_table_existence(self, schema_name: str, table_name: str):
-        result1 = self.conn.execute(f"SELECT * FROM information_schema.tables WHERE table_schema = {schema_name} AND table_name = '{table_name}';").fetchone()
-        self.logger.info(result1)
+        self.logger.info(f"Validating table existence")
         result = self.conn.execute(f"SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = {schema_name} AND table_name = '{table_name}');").fetchone()
         self.logger.info(f"Validation finished: {result}")
 
@@ -39,3 +38,4 @@ class DuckDBSaveDatabase:
     @try_except
     def close_connection(self):
         self.conn.close()
+        
