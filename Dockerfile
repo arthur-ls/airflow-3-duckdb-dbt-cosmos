@@ -1,11 +1,5 @@
-FROM apache/airflow:2.9.1
-
-COPY requirements.txt  ./
+FROM apache/airflow:3.1.0
 
 USER airflow
-
-RUN python -m virtualenv dbt_venv && source dbt_venv/bin/activate
-
-RUN pip install apache-airflow==${AIRFLOW_VERSION} && \
-    pip install -r requirements.txt
-    
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
