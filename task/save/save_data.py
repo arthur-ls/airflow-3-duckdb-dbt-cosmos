@@ -5,7 +5,7 @@ from utils.treatments.exception import try_except
 class DuckDBSaveDatabase:
     def __init__(self, db_path: str = ":memory:"):
         self.conn = duckdb.connect(database=db_path)
-        self._db_path = db_path
+        self._db_path = 'database/'+db_path
 
     @try_except
     def connect_persistent_db(self):
