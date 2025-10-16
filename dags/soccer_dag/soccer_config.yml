@@ -4,3 +4,5 @@ file_path:
   - "campeonato-brasileiro-estatisticas-full.csv"
   - "campeonato-brasileiro-gols.csv"
   - "campeonato-brasileiro-cartoes.csv"
+database: soccer_db
+schema: campeonato_brasileiro
