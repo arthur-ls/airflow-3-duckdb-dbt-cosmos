@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: soccer_db
+    schema: campeonato_brasileiro
+    tables:
+      - name: campeonato_brasileiro_full
+      - name: campeonato_brasileiro_estatisticas_full
+      - name: campeonato_brasileiro_gols
+      - name: campeonato_brasileiro_cartoes
