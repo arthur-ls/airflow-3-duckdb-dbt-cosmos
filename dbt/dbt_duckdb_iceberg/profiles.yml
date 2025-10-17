@@ -3,4 +3,4 @@ dbt_duckdb_iceberg:
   outputs:
     soccer_db:
       type: duckdb
-      path: ../../soccer_db
+      path: "{{ env_var('DUCKDB_PATH') }}"
