@@ -6,3 +6,7 @@ file_path:
   - "campeonato-brasileiro-cartoes.csv"
 database: soccer_db
 schema: campeonato_brasileiro
+db_path: /opt/airflow/database/soccer_db.duckdb
+dbt_target: soccer_db
+dbt_path: /opt/airflow/dbt/dbt_duckdb_iceberg
+dbt_profile: dbt_duckdb_iceberg
