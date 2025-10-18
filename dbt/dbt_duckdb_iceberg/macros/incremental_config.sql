@@ -1,4 +1,4 @@
-{% macro intermediate_config(primary_key) %}
+{% macro incremental_config(primary_key) %}
 {{ 
     config(
         materialized='incremental',
